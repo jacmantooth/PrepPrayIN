@@ -6,6 +6,8 @@ from matplotlib.animation import ArtistAnimation
 
 from matplotlib.animation import FuncAnimation
 
+
+
 def Fu(u_0, dt , v_0,alpha):
     F = u_0 - dt *( (u_0*v_0)/(u_0 + alpha))
     F[0, :] = u_0[2, :]
